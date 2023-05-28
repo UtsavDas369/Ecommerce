@@ -3,7 +3,7 @@ var connection = mysql.createConnection({
   host     : 'localhost',
   port     : '3306',
   user     : 'root',
-  password : '3005',
+  password : 'password',
   //socket   : '/Applications/MAMP/tmp/mysql/mysql.sock',
   database : 'ecommerce'
 });
