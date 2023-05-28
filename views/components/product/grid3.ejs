@@ -1,0 +1,26 @@
+
+                              
+    <% if(title === 'home'){ %>
+    
+    
+                      <div class="col-lg-3 col-sm-6">
+   <div class="single_product_item">
+      <a class="text-body" href="/product/<%= product.pid %>">
+        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/<%= product.picture %>" />
+        <h4 class="card-title"><%= product.title %></h4>
+      </a>
+  
+  
+  
+    <% } else {%>
+      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/<%= product.picture %>" />
+      <h4 class="card-title"><%= product.title %></h4>
+    <% } %>
+    <span class="badge badge-warning"><%= product.name %></span>
+    <p class="card-text">Price: ₹<%= product.price %></p>
+    
+    <a href="/add-to-cart/pid-<%= product.pid %>" class="add_cart"> Add to cart</a>
+
+</div>
+</div>
+
